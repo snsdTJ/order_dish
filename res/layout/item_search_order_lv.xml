@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:stretchColumns="0,1,2" 
+    android:id="@+id/table_layout"
+    android:background="#0f0f0f"
+    >
+	
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="订单号"
+            android:textColor="#d3d3d3"
+            android:singleLine="true" 
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="#0f0f0f"/>
+
+        <TextView
+            android:id="@+id/tv_table_number"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="桌号"
+            android:textColor="#d3d3d3"
+            android:singleLine="true" 
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="#0f0f0f"/>
+
+        <TextView
+            android:id="@+id/tv_begin_time"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="开桌时间"
+            android:textColor="#d3d3d3"
+            android:singleLine="true" 
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="#0f0f0f"/>
+    </TableRow>
+    
+
+</TableLayout>

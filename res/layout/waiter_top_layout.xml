@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="#22221e"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         >
+
+        <LinearLayout
+            android:id="@+id/id_ll_choose_table"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_tv_choose_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选桌"
+                android:textColor="#008000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ll_search_order"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_tv_search_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查订单"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ll_special"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/id_tv_special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特色菜"
+                android:textColor="#d3d3d3"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_iv_tabline"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:background="@drawable/tabline" />
+
+</LinearLayout>

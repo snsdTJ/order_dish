@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.example.orderservice.view.TopView 
+        android:id="@+id/id_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="添加新菜"
+        android:textSize="24sp" 
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="1" 
+        android:padding="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="菜名"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_dish_name"
+                android:layout_height="wrap_content"
+                android:hint="请输入菜名" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="菜系"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_dish_type"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="价格"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_dish_price"
+                android:layout_height="wrap_content"
+                android:hint="请输入菜价" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="货币单位"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_dish_currency"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rb_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元" 
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb_us_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="美元" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="菜单位"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_dish_unit"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rb_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="盘" 
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="碗" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_choose_photo"
+                android:layout_height="wrap_content"
+                android:text="选择菜图："
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/iv_dish_photo"
+                android:layout_height="200dp"
+              />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

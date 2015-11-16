@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.orderservice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".view.LoginActivity">
+             
+        </activity>
+        <activity android:name=".view.BaseActivity"></activity>
+        <activity android:name=".view.waiter.ChooseTableActivity"></activity>
+        <activity android:name=".view.waiter.TableInfoActivity"></activity>
+        <activity android:name=".view.waiter.OrderDishActivity"></activity>
+        <activity android:name=".view.waiter.OrderStateActivity"></activity>
+        <activity android:name=".view.waiter.WaiterMainActivity"></activity>
+        <activity android:name=".view.admin.AdminMainActivity"></activity>
+        <activity android:name=".view.admin.AdminAddDishActivity"></activity>
+        <activity android:name=".view.admin.AdminManageDishActivity"></activity>
+        <activity android:name=".view.manager.ManagerMainActivity"></activity>
+        <activity android:name=".view.manager.ManagerCountActivity"></activity>
+        
+    </application>
+
+</manifest>

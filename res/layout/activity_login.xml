@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@drawable/zhishilongxia" 
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/login_bg"
+        android:stretchColumns="1"
+        android:padding="20dp">
+
+        <TableRow
+            android:background="#31312d"
+            android:layout_marginBottom="1dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="账号 : " 
+                android:textColor="#999"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="wrap_content"
+                android:hint="Input your account" 
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#31312d"
+            android:layout_marginBottom="1dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="密码 :" 
+                android:textColor="#999"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" 
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#31312d"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <CheckBox
+                android:id="@+id/remember_pass"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+               />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="记住密码" 
+                android:textColor="#999"
+                android:textSize="19sp"/>
+        </TableRow>
+
+        <TableRow
+android:background="#31312d"
+            >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="登入" 
+                android:textColor="#999"
+                android:layout_margin="2dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

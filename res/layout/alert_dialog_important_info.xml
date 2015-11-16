@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#31312d"
+    android:padding="15dp">
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="重要提示！"
+        android:textSize="20sp"
+        android:background="#22221e"
+        android:padding="3dp"
+        android:textColor="#999"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="该桌已经点过菜，确定要取消订单和订台吗？"
+        android:textSize="18sp"
+        android:background="#22221e"
+        android:padding="3dp"
+        android:textColor="#999"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22221e">
+         <Button android:id="@+id/btn_submit"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="确定"
+             android:textSize="18sp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:textColor="#999"/>
+         <Button 
+             android:id="@+id/btn_cancel"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="取消"
+             android:textSize="18sp"
+        
+        android:padding="3dp"
+        android:textColor="#999"/>
+    </LinearLayout>
+   
+    
+
+</LinearLayout>

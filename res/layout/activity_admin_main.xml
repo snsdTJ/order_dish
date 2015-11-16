@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#22221e">
+    
+    <com.example.orderservice.view.TopView 
+        android:id="@+id/id_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="管理员界面" 
+        android:textSize="22sp"
+        android:textColor="#999"
+        android:background="#3e3e3e"
+        android:padding="10dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="0,1" 
+        android:paddingTop="10dp"
+        >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/iv_add_dish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_dish_img" />
+
+            <ImageView
+                android:id="@+id/iv_manage_dish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/manage_dish_img"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
